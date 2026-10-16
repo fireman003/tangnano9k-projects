@@ -5,5 +5,6 @@ Toolchain: Yosys → nextpnr-himbaechel → gowin_pack → openFPGALoader.
 
 | # | Projekt | Stav |
 |---|---------|------|
-| P0 | Blikač — čítač na 6 LED | hotovo |
-| P1 | Debouncer + čítač stisků | rozpracováno |
+| P0 | Blikač — čítač na 6 LED  | hotovo       |
+| P1 | Debouncer + čítač stisků | hotovo       |
+| P2 | PWM s parametrem šířky   | rozpracováno |
