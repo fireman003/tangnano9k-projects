@@ -1,4 +1,4 @@
-PROJ   = blink
+PROJ   = debounce
 DEVICE = GW1NR-LV9QN88PC6/I5
 FAMILY = GW1N-9C
 SRC    = src/top.v

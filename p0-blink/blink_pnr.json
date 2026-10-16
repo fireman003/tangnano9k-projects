@@ -1,0 +1,2956 @@
+{
+  "creator": "Next Generation Place and Route (Version nextpnr-0.11.1-53-gf7f1c877)",
+  "modules": {
+    "top": {
+      "settings": {
+        "route": "00000000000000000000000000000001",
+        "router/tmg_ripup": "0 ",
+        "router1/useEstimate": "1 ",
+        "router1/fullCleanupReroute": "1 ",
+        "router1/cleanupReroute": "1 ",
+        "router1/maxIterCnt": "200",
+        "place": "00000000000000000000000000000001",
+        "placer1/startTemp": "1.000000",
+        "placer1/minBelsForGridPick": "64",
+        "placer1/netShareWeight": "0.000000",
+        "placer1/constraintWeight": "10.000000",
+        "placerHeap/cellPlacementTimeout": "8",
+        "placerHeap/noCtrlSet": "0 ",
+        "placerHeap/netShareWeight": "0.000000",
+        "placerHeap/parallelRefine": "0 ",
+        "pack": "00000000000000000000000000000001",
+        "synth": "00000000000000000000000000000001",
+        "placerHeap/timingWeight": "10 ",
+        "placerHeap/criticalityExponent": "2",
+        "placerHeap/beta": "0.900000",
+        "placerHeap/alpha": "0.100000",
+        "seed": "0011000101000001010110010010011001010011010110001001011110010011",
+        "arch.type": " ",
+        "arch.name": "himbaechel",
+        "router": "default",
+        "placer": "heap",
+        "auto_freq": "00000000000000000000000000000000",
+        "timing_driven": "00000000000000000000000000000001",
+        "target_freq": "12000000.000000",
+        "cst.filename": "constr/tangnano9k.cst",
+        "packer.partno": "GW1NR-LV9QN88PC6/I5",
+        "packer.chipdb": "GW1N-9C",
+        "packer.arch": "himbaechel/gowin"
+      },
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "src/top.v:1.1-13.10"
+      },
+      "ports": {
+        "led": {
+          "direction": "output",
+          "bits": [ 7883, 7879, 7875, 7871, 7867, 7864 ]
+        },
+        "clk": {
+          "direction": "input",
+          "bits": [ 7709 ]
+        }
+      },
+      "cells": {
+        "count_DFF_Q_17_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X2Y12/LUT1"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7956 ],
+            "I3": [ 7761 ]
+          }
+        },
+        "count_DFF_Q_18_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X2Y10/LUT3"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7954 ],
+            "I3": [ 7766 ]
+          }
+        },
+        "count_DFF_Q_21_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X2Y10/LUT4"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7952 ],
+            "I3": [ 7787 ]
+          }
+        },
+        "count_DFF_Q_3_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X5Y12/LUT1"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7950 ],
+            "I3": [ 7825 ]
+          }
+        },
+        "count_DFF_Q_9_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X4Y10/LUT5"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7948 ],
+            "I3": [ 7857 ]
+          }
+        },
+        "count_DFF_Q_11_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X3Y12/LUT0"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7960 ],
+            "I3": [ 7731 ]
+          }
+        },
+        "count_DFF_Q_14_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X3Y12/LUT5"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7958 ],
+            "I3": [ 7746 ]
+          }
+        },
+        "count_DFF_Q_D_ALU_SUM_DUMMY_ALULC": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "C2L"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y11/ALU5"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "count_DFF_Q_26_D_ALU_SUM_CIN_ALU_COUT_HEAD_ALULC": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "C2L"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y11/ALU0"
+          },
+          "port_directions": {
+            "I2": "input",
+            "COUT": "output"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "COUT": [ 7904 ]
+          }
+        },
+        "GSR": {
+          "hide_name": 0,
+          "type": "GSR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000010",
+            "NEXTPNR_BEL": "X0Y0/GSR"
+          },
+          "port_directions": {
+            "GSRI": "input"
+          },
+          "connections": {
+            "GSRI": [ 7899 ]
+          }
+        },
+        "led_OBUF_O_I_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y12/LUT3",
+            "src": "/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7717 ],
+            "F": [ 7863 ]
+          }
+        },
+        "led_OBUF_O_5_I_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y11/LUT6",
+            "src": "/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7838 ],
+            "F": [ 7882 ]
+          }
+        },
+        "led_OBUF_O_5": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y14/IOBA",
+            "src": "src/top.v:3.23-3.26",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7883 ],
+            "I": [ 7882 ]
+          }
+        },
+        "led_OBUF_O_4_I_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y13/LUT4",
+            "src": "/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7833 ],
+            "F": [ 7878 ]
+          }
+        },
+        "led_OBUF_O_4": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y15/IOBB",
+            "src": "src/top.v:3.23-3.26",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7879 ],
+            "I": [ 7878 ]
+          }
+        },
+        "led_OBUF_O_3_I_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y20/LUT7",
+            "src": "/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7826 ],
+            "F": [ 7874 ]
+          }
+        },
+        "led_OBUF_O_3": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y20/IOBB",
+            "src": "src/top.v:3.23-3.26",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7875 ],
+            "I": [ 7874 ]
+          }
+        },
+        "led_OBUF_O_2_I_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y19/LUT7",
+            "src": "/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7780 ],
+            "F": [ 7870 ]
+          }
+        },
+        "led_OBUF_O_2": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y21/IOBB",
+            "src": "src/top.v:3.23-3.26",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7871 ],
+            "I": [ 7870 ]
+          }
+        },
+        "led_OBUF_O_1_I_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y20/LUT1",
+            "src": "/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7721 ],
+            "F": [ 7866 ]
+          }
+        },
+        "led_OBUF_O_1": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y24/IOBB",
+            "src": "src/top.v:3.23-3.26",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7867 ],
+            "I": [ 7866 ]
+          }
+        },
+        "led_OBUF_O": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y25/IOBB",
+            "src": "src/top.v:3.23-3.26",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7864 ],
+            "I": [ 7863 ]
+          }
+        },
+        "count_DFF_Q_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y11/ALU4",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7716 ],
+            "I3": [  ],
+            "I1": [ 7717 ],
+            "I0": [  ],
+            "COUT": [ 7861 ],
+            "CIN": [ 7777 ]
+          }
+        },
+        "count_DFF_Q_9_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y11/ALU1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7857 ],
+            "I3": [  ],
+            "I1": [ 7858 ],
+            "I0": [  ],
+            "COUT": [ 7855 ],
+            "CIN": [ 7727 ]
+          }
+        },
+        "count_DFF_Q_9": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y10/DFF5",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7858 ],
+            "D": [ 7948 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_8_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y11/ALU2",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7852 ],
+            "I3": [  ],
+            "I1": [ 7853 ],
+            "I0": [  ],
+            "COUT": [ 7850 ],
+            "CIN": [ 7855 ]
+          }
+        },
+        "count_DFF_Q_8": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y11/DFF2",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7853 ],
+            "D": [ 7852 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_7_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y11/ALU3",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7847 ],
+            "I3": [  ],
+            "I1": [ 7848 ],
+            "I0": [  ],
+            "COUT": [ 7845 ],
+            "CIN": [ 7850 ]
+          }
+        },
+        "count_DFF_Q_7": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y11/DFF3",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7848 ],
+            "D": [ 7847 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_6_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y11/ALU4",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7842 ],
+            "I3": [  ],
+            "I1": [ 7843 ],
+            "I0": [  ],
+            "COUT": [ 7840 ],
+            "CIN": [ 7845 ]
+          }
+        },
+        "count_DFF_Q_6": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y11/DFF4",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7843 ],
+            "D": [ 7842 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_5_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y11/ALU5",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7837 ],
+            "I3": [  ],
+            "I1": [ 7838 ],
+            "I0": [  ],
+            "COUT": [ 7835 ],
+            "CIN": [ 7840 ]
+          }
+        },
+        "count_DFF_Q_5": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y11/DFF5",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7838 ],
+            "D": [ 7837 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_4_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y11/ALU0",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7832 ],
+            "I3": [  ],
+            "I1": [ 7833 ],
+            "I0": [  ],
+            "COUT": [ 7828 ],
+            "CIN": [ 7835 ]
+          }
+        },
+        "count_DFF_Q_4": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y11/DFF0",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7833 ],
+            "D": [ 7832 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "$PACKER_GND_DRV": {
+          "hide_name": 1,
+          "type": "GOWIN_GND",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000010",
+            "NEXTPNR_BEL": "X0Y0/GND"
+          },
+          "port_directions": {
+            "G": "output"
+          },
+          "connections": {
+            "G": [ 7900 ]
+          }
+        },
+        "$PACKER_VCC_DRV": {
+          "hide_name": 1,
+          "type": "GOWIN_VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000010",
+            "NEXTPNR_BEL": "X0Y0/VCC"
+          },
+          "port_directions": {
+            "V": "output"
+          },
+          "connections": {
+            "V": [ 7899 ]
+          }
+        },
+        "count_DFF_Q_3_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y11/ALU1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7825 ],
+            "I3": [  ],
+            "I1": [ 7826 ],
+            "I0": [  ],
+            "COUT": [ 7823 ],
+            "CIN": [ 7828 ]
+          }
+        },
+        "count_DFF_Q_3": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y12/DFF1",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7826 ],
+            "D": [ 7950 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_2_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y11/ALU2",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7779 ],
+            "I3": [  ],
+            "I1": [ 7780 ],
+            "I0": [  ],
+            "COUT": [ 7776 ],
+            "CIN": [ 7823 ]
+          }
+        },
+        "count_DFF_Q_27_D_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y10/LUT0",
+            "src": "/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7817 ],
+            "F": [ 7820 ]
+          }
+        },
+        "count_DFF_Q_27": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y10/DFF0",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7817 ],
+            "D": [ 7820 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_26_D_ALU_SUM_CIN_ALU_COUT": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000000011000000111111",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y11/ALU1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7818 ],
+            "I3": [  ],
+            "I1": [ 7817 ],
+            "I0": [  ],
+            "COUT": [ 7815 ],
+            "CIN": [ 7904 ]
+          }
+        },
+        "count_DFF_Q_26_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y11/ALU2",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7812 ],
+            "I3": [  ],
+            "I1": [ 7813 ],
+            "I0": [  ],
+            "COUT": [ 7810 ],
+            "CIN": [ 7815 ]
+          }
+        },
+        "count_DFF_Q_26": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y11/DFF2",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7813 ],
+            "D": [ 7812 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_25_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y11/ALU3",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7807 ],
+            "I3": [  ],
+            "I1": [ 7808 ],
+            "I0": [  ],
+            "COUT": [ 7805 ],
+            "CIN": [ 7810 ]
+          }
+        },
+        "count_DFF_Q_25": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y11/DFF3",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7808 ],
+            "D": [ 7807 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_24_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y11/ALU4",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7802 ],
+            "I3": [  ],
+            "I1": [ 7803 ],
+            "I0": [  ],
+            "COUT": [ 7800 ],
+            "CIN": [ 7805 ]
+          }
+        },
+        "count_DFF_Q_24": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y11/DFF4",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7803 ],
+            "D": [ 7802 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_23_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y11/ALU5",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7797 ],
+            "I3": [  ],
+            "I1": [ 7798 ],
+            "I0": [  ],
+            "COUT": [ 7795 ],
+            "CIN": [ 7800 ]
+          }
+        },
+        "count_DFF_Q_23": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y11/DFF5",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7798 ],
+            "D": [ 7797 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_22_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y11/ALU0",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7792 ],
+            "I3": [  ],
+            "I1": [ 7793 ],
+            "I0": [  ],
+            "COUT": [ 7790 ],
+            "CIN": [ 7795 ]
+          }
+        },
+        "count_DFF_Q_22": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y11/DFF0",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7793 ],
+            "D": [ 7792 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_21_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y11/ALU1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7787 ],
+            "I3": [  ],
+            "I1": [ 7788 ],
+            "I0": [  ],
+            "COUT": [ 7785 ],
+            "CIN": [ 7790 ]
+          }
+        },
+        "count_DFF_Q_21": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y10/DFF4",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7788 ],
+            "D": [ 7952 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_20_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y11/ALU2",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7782 ],
+            "I3": [  ],
+            "I1": [ 7783 ],
+            "I0": [  ],
+            "COUT": [ 7774 ],
+            "CIN": [ 7785 ]
+          }
+        },
+        "count_DFF_Q_20": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y11/DFF2",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7783 ],
+            "D": [ 7782 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_2": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y11/DFF2",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7780 ],
+            "D": [ 7779 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_1_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y11/ALU3",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7720 ],
+            "I3": [  ],
+            "I1": [ 7721 ],
+            "I0": [  ],
+            "COUT": [ 7777 ],
+            "CIN": [ 7776 ]
+          }
+        },
+        "count_DFF_Q_19_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y11/ALU3",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7771 ],
+            "I3": [  ],
+            "I1": [ 7772 ],
+            "I0": [  ],
+            "COUT": [ 7769 ],
+            "CIN": [ 7774 ]
+          }
+        },
+        "count_DFF_Q_19": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y11/DFF3",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7772 ],
+            "D": [ 7771 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_18_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y11/ALU4",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7766 ],
+            "I3": [  ],
+            "I1": [ 7767 ],
+            "I0": [  ],
+            "COUT": [ 7764 ],
+            "CIN": [ 7769 ]
+          }
+        },
+        "count_DFF_Q_18": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y10/DFF3",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7767 ],
+            "D": [ 7954 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_17_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y11/ALU5",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7761 ],
+            "I3": [  ],
+            "I1": [ 7762 ],
+            "I0": [  ],
+            "COUT": [ 7759 ],
+            "CIN": [ 7764 ]
+          }
+        },
+        "count_DFF_Q_17": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y12/DFF1",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7762 ],
+            "D": [ 7956 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_16_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y11/ALU0",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7756 ],
+            "I3": [  ],
+            "I1": [ 7757 ],
+            "I0": [  ],
+            "COUT": [ 7754 ],
+            "CIN": [ 7759 ]
+          }
+        },
+        "count_DFF_Q_16": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y11/DFF0",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7757 ],
+            "D": [ 7756 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_15_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y11/ALU1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7751 ],
+            "I3": [  ],
+            "I1": [ 7752 ],
+            "I0": [  ],
+            "COUT": [ 7749 ],
+            "CIN": [ 7754 ]
+          }
+        },
+        "count_DFF_Q_15": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y11/DFF1",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7752 ],
+            "D": [ 7751 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_14_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y11/ALU2",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7746 ],
+            "I3": [  ],
+            "I1": [ 7747 ],
+            "I0": [  ],
+            "COUT": [ 7744 ],
+            "CIN": [ 7749 ]
+          }
+        },
+        "count_DFF_Q_14": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y12/DFF5",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7747 ],
+            "D": [ 7958 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_13_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y11/ALU3",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7741 ],
+            "I3": [  ],
+            "I1": [ 7742 ],
+            "I0": [  ],
+            "COUT": [ 7739 ],
+            "CIN": [ 7744 ]
+          }
+        },
+        "count_DFF_Q_13": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y11/DFF3",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7742 ],
+            "D": [ 7741 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_12_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y11/ALU4",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7736 ],
+            "I3": [  ],
+            "I1": [ 7737 ],
+            "I0": [  ],
+            "COUT": [ 7734 ],
+            "CIN": [ 7739 ]
+          }
+        },
+        "count_DFF_Q_12": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y11/DFF4",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7737 ],
+            "D": [ 7736 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_11_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y11/ALU5",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7731 ],
+            "I3": [  ],
+            "I1": [ 7732 ],
+            "I0": [  ],
+            "COUT": [ 7726 ],
+            "CIN": [ 7734 ]
+          }
+        },
+        "count_DFF_Q_11": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y12/DFF0",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7732 ],
+            "D": [ 7960 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_10_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y11/ALU0",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7899 ],
+            "SUM": [ 7723 ],
+            "I3": [  ],
+            "I1": [ 7724 ],
+            "I0": [  ],
+            "COUT": [ 7727 ],
+            "CIN": [ 7726 ]
+          }
+        },
+        "count_DFF_Q_10": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y11/DFF0",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7724 ],
+            "D": [ 7723 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q_1": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y11/DFF3",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7721 ],
+            "D": [ 7720 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "count_DFF_Q": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y11/DFF4",
+            "src": "src/top.v:7.5-9.8|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7717 ],
+            "D": [ 7716 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clk_IBUF_I": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X46Y16/IOBA",
+            "src": "src/top.v:2.23-2.26",
+            "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+            "&PULL_MODE=UP": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7713 ],
+            "I": [ 7709 ]
+          }
+        }
+      },
+      "netnames": {
+        "count_DFF_Q_11$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7960 ] ,
+          "attributes": {
+            "ROUTING": "X3Y12/F0;;1;X3Y12/XD0;X3Y12/XD0/F0;1"
+          }
+        },
+        "count_DFF_Q_14$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7958 ] ,
+          "attributes": {
+            "ROUTING": "X3Y12/F5;;1;X3Y12/XD5;X3Y12/XD5/F5;1"
+          }
+        },
+        "count_DFF_Q_17$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7956 ] ,
+          "attributes": {
+            "ROUTING": "X2Y12/F1;;1;X2Y12/XD1;X2Y12/XD1/F1;1"
+          }
+        },
+        "count_DFF_Q_18$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7954 ] ,
+          "attributes": {
+            "ROUTING": "X2Y10/F3;;1;X2Y10/XD3;X2Y10/XD3/F3;1"
+          }
+        },
+        "count_DFF_Q_21$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7952 ] ,
+          "attributes": {
+            "ROUTING": "X2Y10/F4;;1;X2Y10/XD4;X2Y10/XD4/F4;1"
+          }
+        },
+        "count_DFF_Q_3$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7950 ] ,
+          "attributes": {
+            "ROUTING": "X5Y12/F1;;1;X5Y12/XD1;X5Y12/XD1/F1;1"
+          }
+        },
+        "count_DFF_Q_9$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7948 ] ,
+          "attributes": {
+            "ROUTING": "X4Y10/F5;;1;X4Y10/XD5;X4Y10/XD5/F5;1"
+          }
+        },
+        "count_DFF_Q_26_D_ALU_SUM_CIN_ALU_COUT_HEAD_ALULC": {
+          "hide_name": 0,
+          "bits": [ 7904 ] ,
+          "attributes": {
+            "ROUTING": "X1Y11/COUT0;;1"
+          }
+        },
+        "led[0]": {
+          "hide_name": 0,
+          "bits": [ 7883 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "src/top.v:3.23-3.26"
+          }
+        },
+        "led_OBUF_O_5_I": {
+          "hide_name": 0,
+          "bits": [ 7882 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/F6;;1;X4Y11/S260;X4Y11/S260/F6;1;X4Y13/W260;X4Y13/W260/S262;1;X2Y13/W270;X2Y13/W270/W262;1;X0Y13/S270;X0Y13/S270/W272;1;X0Y14/A0;X0Y14/A0/S271;1"
+          }
+        },
+        "led[1]": {
+          "hide_name": 0,
+          "bits": [ 7879 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "src/top.v:3.23-3.26"
+          }
+        },
+        "led_OBUF_O_4_I": {
+          "hide_name": 0,
+          "bits": [ 7878 ] ,
+          "attributes": {
+            "ROUTING": "X1Y13/F4;;1;X1Y13/W100;X1Y13/W100/F4;1;X0Y13/S200;X0Y13/S200/W101;1;X0Y15/D1;X0Y15/D1/S202;1"
+          }
+        },
+        "led[2]": {
+          "hide_name": 0,
+          "bits": [ 7875 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "src/top.v:3.23-3.26"
+          }
+        },
+        "led_OBUF_O_3_I": {
+          "hide_name": 0,
+          "bits": [ 7874 ] ,
+          "attributes": {
+            "ROUTING": "X5Y20/F7;;1;X5Y20/W820;X5Y20/W820/F7;1;X2Y20/W240;X2Y20/W240/E828;1;X0Y20/X03;X0Y20/X03/W242;1;X0Y20/D1;X0Y20/D1/X03;1"
+          }
+        },
+        "led[3]": {
+          "hide_name": 0,
+          "bits": [ 7871 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "src/top.v:3.23-3.26"
+          }
+        },
+        "led_OBUF_O_2_I": {
+          "hide_name": 0,
+          "bits": [ 7870 ] ,
+          "attributes": {
+            "ROUTING": "X4Y19/F7;;1;X4Y19/W270;X4Y19/W270/F7;1;X2Y19/W270;X2Y19/W270/W272;1;X0Y19/S270;X0Y19/S270/W272;1;X0Y21/X08;X0Y21/X08/S272;1;X0Y21/D1;X0Y21/D1/X08;1"
+          }
+        },
+        "led[4]": {
+          "hide_name": 0,
+          "bits": [ 7867 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "src/top.v:3.23-3.26"
+          }
+        },
+        "led_OBUF_O_1_I": {
+          "hide_name": 0,
+          "bits": [ 7866 ] ,
+          "attributes": {
+            "ROUTING": "X5Y20/F1;;1;X5Y20/W810;X5Y20/W810/F1;1;X1Y20/S220;X1Y20/S220/W814;1;X1Y22/S220;X1Y22/S220/S222;1;X1Y24/W220;X1Y24/W220/S222;1;X0Y24/D1;X0Y24/D1/W221;1"
+          }
+        },
+        "led[5]": {
+          "hide_name": 0,
+          "bits": [ 7864 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "src/top.v:3.23-3.26"
+          }
+        },
+        "led_OBUF_O_I": {
+          "hide_name": 0,
+          "bits": [ 7863 ] ,
+          "attributes": {
+            "ROUTING": "X5Y12/F3;;1;X5Y12/S800;X5Y12/S800/F3;1;X5Y20/S810;X5Y20/S810/S808;1;X5Y24/W810;X5Y24/W810/S814;1;X1Y24/S220;X1Y24/S220/W814;1;X1Y25/W220;X1Y25/W220/S221;1;X0Y25/D1;X0Y25/D1/W221;1"
+          }
+        },
+        "count_DFF_Q_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7861 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[18]": {
+          "hide_name": 0,
+          "bits": [ 7858 ] ,
+          "attributes": {
+            "ROUTING": "X4Y10/Q5;;1;X4Y10/SN10;X4Y10/SN10/Q5;1;X4Y11/B1;X4Y11/B1/S111;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_9_D": {
+          "hide_name": 0,
+          "bits": [ 7857 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/F1;;1;X4Y11/N130;X4Y11/N130/F1;1;X4Y10/D5;X4Y10/D5/N131;1"
+          }
+        },
+        "count_DFF_Q_9_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7855 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/COUT1;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[19]": {
+          "hide_name": 0,
+          "bits": [ 7853 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/Q2;;1;X4Y11/X01;X4Y11/X01/Q2;1;X4Y11/B2;X4Y11/B2/X01;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_8_D": {
+          "hide_name": 0,
+          "bits": [ 7852 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/F2;;1;X4Y11/XD2;X4Y11/XD2/F2;1"
+          }
+        },
+        "count_DFF_Q_8_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7850 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/COUT2;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[20]": {
+          "hide_name": 0,
+          "bits": [ 7848 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/Q3;;1;X4Y11/B3;X4Y11/B3/Q3;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_7_D": {
+          "hide_name": 0,
+          "bits": [ 7847 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/F3;;1;X4Y11/XD3;X4Y11/XD3/F3;1"
+          }
+        },
+        "count_DFF_Q_7_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7845 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/COUT3;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[21]": {
+          "hide_name": 0,
+          "bits": [ 7843 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/Q4;;1;X4Y11/X03;X4Y11/X03/Q4;1;X4Y11/B4;X4Y11/B4/X03;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_6_D": {
+          "hide_name": 0,
+          "bits": [ 7842 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/F4;;1;X4Y11/XD4;X4Y11/XD4/F4;1"
+          }
+        },
+        "count_DFF_Q_6_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7840 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/COUT4;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[22]": {
+          "hide_name": 0,
+          "bits": [ 7838 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/E130;X4Y11/E130/Q5;1;X4Y11/A6;X4Y11/A6/E130;1;X4Y11/Q5;;1;X4Y11/E250;X4Y11/E250/Q5;1;X4Y11/B5;X4Y11/B5/E250;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_5_D": {
+          "hide_name": 0,
+          "bits": [ 7837 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/F5;;1;X4Y11/XD5;X4Y11/XD5/F5;1"
+          }
+        },
+        "count_DFF_Q_5_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7835 ] ,
+          "attributes": {
+            "ROUTING": "X5Y11/CIN0;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[23]": {
+          "hide_name": 0,
+          "bits": [ 7833 ] ,
+          "attributes": {
+            "ROUTING": "X5Y12/W800;X5Y12/W800/S101;1;X1Y12/S230;X1Y12/S230/W804;1;X1Y13/A4;X1Y13/A4/S231;1;X5Y11/Q0;;1;X5Y11/S100;X5Y11/S100/Q0;1;X5Y11/B0;X5Y11/B0/S100;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_4_D": {
+          "hide_name": 0,
+          "bits": [ 7832 ] ,
+          "attributes": {
+            "ROUTING": "X5Y11/F0;;1;X5Y11/XD0;X5Y11/XD0/F0;1"
+          }
+        },
+        "count_DFF_Q_4_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7828 ] ,
+          "attributes": {
+            "ROUTING": "X5Y11/COUT0;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[24]": {
+          "hide_name": 0,
+          "bits": [ 7826 ] ,
+          "attributes": {
+            "ROUTING": "X5Y12/S810;X5Y12/S810/Q1;1;X5Y20/S210;X5Y20/S210/S818;1;X5Y20/A7;X5Y20/A7/S210;1;X5Y12/Q1;;1;X5Y12/N210;X5Y12/N210/Q1;1;X5Y11/B1;X5Y11/B1/N211;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_3_D": {
+          "hide_name": 0,
+          "bits": [ 7825 ] ,
+          "attributes": {
+            "ROUTING": "X5Y11/F1;;1;X5Y11/SN20;X5Y11/SN20/F1;1;X5Y12/D1;X5Y12/D1/S121;1"
+          }
+        },
+        "count_DFF_Q_3_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7823 ] ,
+          "attributes": {
+            "ROUTING": "X5Y11/COUT1;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count_DFF_Q_27_D": {
+          "hide_name": 0,
+          "bits": [ 7820 ] ,
+          "attributes": {
+            "ROUTING": "X1Y10/F0;;1;X1Y10/XD0;X1Y10/XD0/F0;1"
+          }
+        },
+        "count_DFF_Q_26_D_ALU_SUM_CIN_ALU_COUT_SUM": {
+          "hide_name": 0,
+          "bits": [ 7818 ] ,
+          "attributes": {
+            "ROUTING": " "
+          }
+        },
+        "count[0]": {
+          "hide_name": 0,
+          "bits": [ 7817 ] ,
+          "attributes": {
+            "ROUTING": "X1Y10/N200;X1Y10/N200/Q0;1;X1Y10/A0;X1Y10/A0/N200;1;X1Y10/Q0;;1;X1Y10/SN10;X1Y10/SN10/Q0;1;X1Y11/B1;X1Y11/B1/S111;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_26_D_ALU_SUM_CIN": {
+          "hide_name": 0,
+          "bits": [ 7815 ] ,
+          "attributes": {
+            "ROUTING": "X1Y11/COUT1;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[1]": {
+          "hide_name": 0,
+          "bits": [ 7813 ] ,
+          "attributes": {
+            "ROUTING": "X1Y11/Q2;;1;X1Y11/S130;X1Y11/S130/Q2;1;X1Y11/B2;X1Y11/B2/S130;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_26_D": {
+          "hide_name": 0,
+          "bits": [ 7812 ] ,
+          "attributes": {
+            "ROUTING": "X1Y11/F2;;1;X1Y11/XD2;X1Y11/XD2/F2;1"
+          }
+        },
+        "count_DFF_Q_26_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7810 ] ,
+          "attributes": {
+            "ROUTING": "X1Y11/COUT2;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[2]": {
+          "hide_name": 0,
+          "bits": [ 7808 ] ,
+          "attributes": {
+            "ROUTING": "X1Y11/Q3;;1;X1Y11/B3;X1Y11/B3/Q3;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_25_D": {
+          "hide_name": 0,
+          "bits": [ 7807 ] ,
+          "attributes": {
+            "ROUTING": "X1Y11/F3;;1;X1Y11/XD3;X1Y11/XD3/F3;1"
+          }
+        },
+        "count_DFF_Q_25_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7805 ] ,
+          "attributes": {
+            "ROUTING": "X1Y11/COUT3;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[3]": {
+          "hide_name": 0,
+          "bits": [ 7803 ] ,
+          "attributes": {
+            "ROUTING": "X1Y11/Q4;;1;X1Y11/X03;X1Y11/X03/Q4;1;X1Y11/B4;X1Y11/B4/X03;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_24_D": {
+          "hide_name": 0,
+          "bits": [ 7802 ] ,
+          "attributes": {
+            "ROUTING": "X1Y11/F4;;1;X1Y11/XD4;X1Y11/XD4/F4;1"
+          }
+        },
+        "count_DFF_Q_24_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7800 ] ,
+          "attributes": {
+            "ROUTING": "X1Y11/COUT4;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[4]": {
+          "hide_name": 0,
+          "bits": [ 7798 ] ,
+          "attributes": {
+            "ROUTING": "X1Y11/Q5;;1;X1Y11/W100;X1Y11/W100/Q5;1;X1Y11/B5;X1Y11/B5/W100;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_23_D": {
+          "hide_name": 0,
+          "bits": [ 7797 ] ,
+          "attributes": {
+            "ROUTING": "X1Y11/F5;;1;X1Y11/XD5;X1Y11/XD5/F5;1"
+          }
+        },
+        "count_DFF_Q_23_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7795 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/CIN0;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[5]": {
+          "hide_name": 0,
+          "bits": [ 7793 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/Q0;;1;X2Y11/X05;X2Y11/X05/Q0;1;X2Y11/B0;X2Y11/B0/X05;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_22_D": {
+          "hide_name": 0,
+          "bits": [ 7792 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/F0;;1;X2Y11/XD0;X2Y11/XD0/F0;1"
+          }
+        },
+        "count_DFF_Q_22_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7790 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/COUT0;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[6]": {
+          "hide_name": 0,
+          "bits": [ 7788 ] ,
+          "attributes": {
+            "ROUTING": "X2Y10/Q4;;1;X2Y10/SN10;X2Y10/SN10/Q4;1;X2Y11/B1;X2Y11/B1/S111;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_21_D": {
+          "hide_name": 0,
+          "bits": [ 7787 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/F1;;1;X2Y11/N130;X2Y11/N130/F1;1;X2Y10/D4;X2Y10/D4/N131;1"
+          }
+        },
+        "count_DFF_Q_21_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7785 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/COUT1;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[7]": {
+          "hide_name": 0,
+          "bits": [ 7783 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/Q2;;1;X2Y11/S130;X2Y11/S130/Q2;1;X2Y11/B2;X2Y11/B2/S130;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_20_D": {
+          "hide_name": 0,
+          "bits": [ 7782 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/F2;;1;X2Y11/XD2;X2Y11/XD2/F2;1"
+          }
+        },
+        "count[25]": {
+          "hide_name": 0,
+          "bits": [ 7780 ] ,
+          "attributes": {
+            "ROUTING": "X5Y12/S830;X5Y12/S830/S131;1;X5Y20/N130;X5Y20/N130/S838;1;X5Y19/W270;X5Y19/W270/N131;1;X4Y19/A7;X4Y19/A7/W271;1;X5Y11/Q2;;1;X5Y11/S130;X5Y11/S130/Q2;1;X5Y11/B2;X5Y11/B2/S130;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_2_D": {
+          "hide_name": 0,
+          "bits": [ 7779 ] ,
+          "attributes": {
+            "ROUTING": "X5Y11/F2;;1;X5Y11/XD2;X5Y11/XD2/F2;1"
+          }
+        },
+        "count_DFF_Q_1_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7777 ] ,
+          "attributes": {
+            "ROUTING": "X5Y11/COUT3;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count_DFF_Q_2_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7776 ] ,
+          "attributes": {
+            "ROUTING": "X5Y11/COUT2;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count_DFF_Q_20_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7774 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/COUT2;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[8]": {
+          "hide_name": 0,
+          "bits": [ 7772 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/Q3;;1;X2Y11/B3;X2Y11/B3/Q3;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_19_D": {
+          "hide_name": 0,
+          "bits": [ 7771 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/F3;;1;X2Y11/XD3;X2Y11/XD3/F3;1"
+          }
+        },
+        "count_DFF_Q_19_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7769 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/COUT3;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[9]": {
+          "hide_name": 0,
+          "bits": [ 7767 ] ,
+          "attributes": {
+            "ROUTING": "X2Y10/Q3;;1;X2Y10/SN20;X2Y10/SN20/Q3;1;X2Y11/B4;X2Y11/B4/S121;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_18_D": {
+          "hide_name": 0,
+          "bits": [ 7766 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/F4;;1;X2Y11/N100;X2Y11/N100/F4;1;X2Y10/D3;X2Y10/D3/N101;1"
+          }
+        },
+        "count_DFF_Q_18_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7764 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/COUT4;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[10]": {
+          "hide_name": 0,
+          "bits": [ 7762 ] ,
+          "attributes": {
+            "ROUTING": "X2Y12/Q1;;1;X2Y12/N100;X2Y12/N100/Q1;1;X2Y11/B5;X2Y11/B5/N101;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_17_D": {
+          "hide_name": 0,
+          "bits": [ 7761 ] ,
+          "attributes": {
+            "ROUTING": "X2Y11/F5;;1;X2Y11/SN20;X2Y11/SN20/F5;1;X2Y12/D1;X2Y12/D1/S121;1"
+          }
+        },
+        "count_DFF_Q_17_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7759 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/CIN0;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[11]": {
+          "hide_name": 0,
+          "bits": [ 7757 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/Q0;;1;X3Y11/S100;X3Y11/S100/Q0;1;X3Y11/B0;X3Y11/B0/S100;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_16_D": {
+          "hide_name": 0,
+          "bits": [ 7756 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/F0;;1;X3Y11/XD0;X3Y11/XD0/F0;1"
+          }
+        },
+        "count_DFF_Q_16_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7754 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/COUT0;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[12]": {
+          "hide_name": 0,
+          "bits": [ 7752 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/Q1;;1;X3Y11/B1;X3Y11/B1/Q1;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_15_D": {
+          "hide_name": 0,
+          "bits": [ 7751 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/F1;;1;X3Y11/XD1;X3Y11/XD1/F1;1"
+          }
+        },
+        "count_DFF_Q_15_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7749 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/COUT1;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[13]": {
+          "hide_name": 0,
+          "bits": [ 7747 ] ,
+          "attributes": {
+            "ROUTING": "X3Y12/Q5;;1;X3Y12/N130;X3Y12/N130/Q5;1;X3Y11/B2;X3Y11/B2/N131;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_14_D": {
+          "hide_name": 0,
+          "bits": [ 7746 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/F2;;1;X3Y11/SN10;X3Y11/SN10/F2;1;X3Y12/D5;X3Y12/D5/S111;1"
+          }
+        },
+        "count_DFF_Q_14_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7744 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/COUT2;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[14]": {
+          "hide_name": 0,
+          "bits": [ 7742 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/Q3;;1;X3Y11/B3;X3Y11/B3/Q3;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_13_D": {
+          "hide_name": 0,
+          "bits": [ 7741 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/F3;;1;X3Y11/XD3;X3Y11/XD3/F3;1"
+          }
+        },
+        "count_DFF_Q_13_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7739 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/COUT3;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[15]": {
+          "hide_name": 0,
+          "bits": [ 7737 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/Q4;;1;X3Y11/X03;X3Y11/X03/Q4;1;X3Y11/B4;X3Y11/B4/X03;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_12_D": {
+          "hide_name": 0,
+          "bits": [ 7736 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/F4;;1;X3Y11/XD4;X3Y11/XD4/F4;1"
+          }
+        },
+        "count_DFF_Q_12_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7734 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/COUT4;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[16]": {
+          "hide_name": 0,
+          "bits": [ 7732 ] ,
+          "attributes": {
+            "ROUTING": "X3Y12/Q0;;1;X3Y12/N100;X3Y12/N100/Q0;1;X3Y11/B5;X3Y11/B5/N101;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_11_D": {
+          "hide_name": 0,
+          "bits": [ 7731 ] ,
+          "attributes": {
+            "ROUTING": "X3Y11/F5;;1;X3Y11/SN20;X3Y11/SN20/F5;1;X3Y12/D0;X3Y12/D0/S121;1"
+          }
+        },
+        "$PACKER_GND": {
+          "hide_name": 1,
+          "bits": [ 7900 ] ,
+          "attributes": {
+            "ROUTING": " "
+          }
+        },
+        "$PACKER_VCC": {
+          "hide_name": 1,
+          "bits": [ 7899 ] ,
+          "attributes": {
+            "ROUTING": "X1Y11/C0;X1Y11/C0/S261;1;X1Y10/S260;X1Y10/S260/VCC;1;X4Y11/C0;X4Y11/C0/X04;1;X4Y11/X04;X4Y11/X04/VCC;1;X3Y11/C0;X3Y11/C0/N242;1;X3Y13/N240;X3Y13/N240/VCC;1;X3Y13/VCC;;1;X5Y11/C2;X5Y11/C2/W262;1;X7Y11/W260;X7Y11/W260/VCC;1;X7Y11/VCC;;1;X1Y11/C4;X1Y11/C4/N221;1;X1Y12/N220;X1Y12/N220/VCC;1;X1Y12/VCC;;1;X1Y11/C2;X1Y11/C2/S241;1;X1Y10/S240;X1Y10/S240/VCC;1;X1Y10/VCC;;1;X5Y11/C3;X5Y11/C3/S241;1;X5Y10/S240;X5Y10/S240/VCC;1;X5Y10/VCC;;1;X1Y11/C5;X1Y11/C5/N222;1;X1Y13/N220;X1Y13/N220/VCC;1;X1Y13/VCC;;1;X2Y11/C5;X2Y11/C5/X08;1;X2Y11/X08;X2Y11/X08/VCC;1;X5Y11/C0;X5Y11/C0/S242;1;X5Y9/S240;X5Y9/S240/VCC;1;X5Y9/VCC;;1;X0Y0/C4;X0Y0/C4/N202;1;X0Y2/N200;X0Y2/N200/VCC;1;X0Y2/VCC;;1;X3Y11/C2;X3Y11/C2/S241;1;X3Y10/S240;X3Y10/S240/VCC;1;X3Y10/VCC;;1;X4Y11/C4;X4Y11/C4/N202;1;X4Y13/N200;X4Y13/N200/VCC;1;X4Y13/VCC;;1;X2Y11/C2;X2Y11/C2/S242;1;X2Y9/S240;X2Y9/S240/VCC;1;X2Y9/VCC;;1;X4Y11/C5;X4Y11/C5/N221;1;X4Y12/N220;X4Y12/N220/VCC;1;X4Y12/VCC;;1;X2Y11/C4;X2Y11/C4/N222;1;X2Y13/N220;X2Y13/N220/VCC;1;X2Y13/VCC;;1;X4Y11/C2;X4Y11/C2/S242;1;X4Y9/S240;X4Y9/S240/VCC;1;X4Y9/VCC;;1;X4Y11/C3;X4Y11/C3/W262;1;X6Y11/W260;X6Y11/W260/VCC;1;X6Y11/VCC;;1;X2Y11/C1;X2Y11/C1/E242;1;X0Y11/E240;X0Y11/E240/VCC;1;X0Y11/VCC;;1;X1Y11/C1;X1Y11/C1/S242;1;X1Y9/S240;X1Y9/S240/VCC;1;X1Y9/VCC;;1;X2Y11/C0;X2Y11/C0/S241;1;X2Y10/S240;X2Y10/S240/VCC;1;X2Y10/VCC;;1;X4Y11/C1;X4Y11/C1/S241;1;X4Y10/S240;X4Y10/S240/VCC;1;X4Y10/VCC;;1;X3Y11/C4;X3Y11/C4/S202;1;X3Y9/S200;X3Y9/S200/VCC;1;X3Y9/VCC;;1;X5Y11/C1;X5Y11/C1/E241;1;X4Y11/E240;X4Y11/E240/VCC;1;X4Y11/VCC;;1;X2Y11/C3;X2Y11/C3/N261;1;X2Y12/N260;X2Y12/N260/VCC;1;X2Y12/VCC;;1;X1Y11/C3;X1Y11/C3/X04;1;X1Y11/X04;X1Y11/X04/VCC;1;X1Y11/VCC;;1;X3Y11/C3;X3Y11/C3/N261;1;X3Y12/N260;X3Y12/N260/VCC;1;X3Y12/VCC;;1;X3Y11/C5;X3Y11/C5/E241;1;X2Y11/E240;X2Y11/E240/VCC;1;X2Y11/VCC;;1;X5Y11/C4;X5Y11/C4/X08;1;X5Y11/X08;X5Y11/X08/VCC;1;X5Y11/VCC;;1;X3Y11/C1;X3Y11/C1/X04;1;X3Y11/X04;X3Y11/X04/VCC;1;X3Y11/VCC;;1"
+          }
+        },
+        "count_DFF_Q_10_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7727 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/COUT0;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count_DFF_Q_11_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7726 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/CIN0;;1",
+            "src": "src/top.v:8.18-8.27|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/marek/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "count[17]": {
+          "hide_name": 0,
+          "bits": [ 7724 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/Q0;;1;X4Y11/X05;X4Y11/X05/Q0;1;X4Y11/B0;X4Y11/B0/X05;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_10_D": {
+          "hide_name": 0,
+          "bits": [ 7723 ] ,
+          "attributes": {
+            "ROUTING": "X4Y11/F0;;1;X4Y11/XD0;X4Y11/XD0/F0;1"
+          }
+        },
+        "count[26]": {
+          "hide_name": 0,
+          "bits": [ 7721 ] ,
+          "attributes": {
+            "ROUTING": "X5Y11/S800;X5Y11/S800/Q3;1;X5Y19/S130;X5Y19/S130/S808;1;X5Y20/A1;X5Y20/A1/S131;1;X5Y11/Q3;;1;X5Y11/B3;X5Y11/B3/Q3;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_1_D": {
+          "hide_name": 0,
+          "bits": [ 7720 ] ,
+          "attributes": {
+            "ROUTING": "X5Y11/F3;;1;X5Y11/XD3;X5Y11/XD3/F3;1"
+          }
+        },
+        "count[27]": {
+          "hide_name": 0,
+          "bits": [ 7717 ] ,
+          "attributes": {
+            "ROUTING": "X5Y11/S240;X5Y11/S240/Q4;1;X5Y12/X05;X5Y12/X05/S241;1;X5Y12/A3;X5Y12/A3/X05;1;X5Y11/Q4;;1;X5Y11/X03;X5Y11/X03/Q4;1;X5Y11/B4;X5Y11/B4/X03;1",
+            "src": "src/top.v:5.15-5.20"
+          }
+        },
+        "count_DFF_Q_D": {
+          "hide_name": 0,
+          "bits": [ 7716 ] ,
+          "attributes": {
+            "ROUTING": "X5Y11/F4;;1;X5Y11/XD4;X5Y11/XD4/F4;1"
+          }
+        },
+        "clk_IBUF_I_O": {
+          "hide_name": 0,
+          "bits": [ 7713 ] ,
+          "attributes": {
+            "ROUTING": "X4Y10/CLK2;X4Y10/CLK2/GB00;5;X4Y11/CLK1;X4Y11/CLK1/GB00;5;X4Y11/CLK2;X4Y11/CLK2/GB00;5;X5Y11/CLK0;X5Y11/CLK0/GB00;5;X5Y12/CLK0;X5Y12/CLK0/GB00;5;X1Y10/CLK0;X1Y10/CLK0/GB00;5;X1Y11/CLK1;X1Y11/CLK1/GB00;5;X1Y11/CLK2;X1Y11/CLK2/GB00;5;X2Y11/CLK0;X2Y11/CLK0/GB00;5;X2Y10/CLK2;X2Y10/CLK2/GB00;5;X2Y11/CLK1;X2Y11/CLK1/GB00;5;X3Y10/GB00;X3Y10/GBO0/GT00;5;X2Y10/CLK1;X2Y10/CLK1/GB00;5;X2Y12/CLK0;X2Y12/CLK0/GB00;5;X3Y11/CLK0;X3Y11/CLK0/GB00;5;X3Y12/CLK2;X3Y12/CLK2/GB00;5;X3Y11/CLK1;X3Y11/CLK1/GB00;5;X3Y11/CLK2;X3Y11/CLK2/GB00;5;X3Y12/GBO0;X3Y12/GBO0/GT00;5;X3Y12/CLK0;X3Y12/CLK0/GB00;5;X4Y11/CLK0;X4Y11/CLK0/GB00;5;X5Y11/CLK1;X5Y11/CLK1/GB00;5;X19Y19/SPINE16;X27Y9/SPINE16/PCLKR1;5;X3Y19/GT00;X3Y19/GT00/SPINE16;5;X4Y11/GB00;X3Y11/GBO0/GT00;5;X5Y11/CLK2;X5Y11/CLK2/GB00;5;X46Y16/F6;;5"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 7709 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "src/top.v:2.23-2.26"
+          }
+        }
+      }
+    }
+  }
+}
