@@ -1,7 +1,7 @@
 PROJ   = pwm
 DEVICE = GW1NR-LV9QN88PC6/I5
 FAMILY = GW1N-9C
-SRC    = src/top.v
+SRC    = src/top.v src/pwm.v
 CST    = constr/tangnano9k.cst
 
 all: $(PROJ).fs
