@@ -3,9 +3,10 @@
 Učím se Verilog a návrh číslicových obvodů.
 Toolchain: Yosys → nextpnr-himbaechel → gowin_pack → openFPGALoader.
 
-| # | Projekt | Stav |
-|---|---------|------|
+| ## | Projekt                  | Stav         |
+|----|--------------------------|--------------|
 | P0 | Blikač — čítač na 6 LED  | hotovo       |
 | P1 | Debouncer + čítač stisků | hotovo       |
 | P2 | PWM s parametrem šířky   | hotovo       |
-| P3 | UART                     | rozpracováno |
+| P3 | UART                     | hotovo       |
+| P4 |                          | rozpracováno |

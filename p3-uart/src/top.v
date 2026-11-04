@@ -7,5 +7,13 @@ module top (
     // echo: co přijde, to pošli zpátky
     // a zobraz spodních 6 bitů na LED
 
+    reg [7:0] data;
+    wire valid = 0;
+    wire busy;
+
+    uart_rx rx (clk, uart_rx, data, valid);
+    uart_tx tx (clk, valid, data, uart_tx, busy);
+
+    assign led[5:0] = data[5:0];
     
 endmodule
