@@ -14,6 +14,7 @@
 
         reg rx_sync = 0;
         reg rx_reg = 0;
+        reg alligned = 0;
 
         always @(posedge clk) begin
             counter <= counter + 1;
@@ -24,12 +25,12 @@
             if (rx_reg == 1 && rx_sync == 0 && busy == 0) begin
                 busy <= 1;
                 counter <= 0;
+                alligned <= 0;
                 bit_id <= 0;
-            end else if (busy == 1 && bit_id == 0 && counter == 351) begin
-                data[bit_id] <= rx_reg;
-                bit_id <= bit_id + 1;
+            end else if (busy == 1 && alligned == 0 && counter == 117) begin
                 counter <= 0;
-            end else if (busy == 1 && counter == 233) begin
+                alligned <= 1;
+            end else if (busy == 1 && counter == 233 && alligned == 1) begin
 
                 if(bit_id <= 7) begin
                     data[bit_id] <= rx_reg;

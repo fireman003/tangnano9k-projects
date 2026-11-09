@@ -5,8 +5,8 @@ module uart_tx #(
     input  wire       clk,
     input  wire       start,      // puls na 1 takt = pošli
     input  wire [7:0] data,       // co poslat
-    output reg        tx,         // na pin
-    output reg        busy        // 1 když se vysílá
+    output reg        tx = 1'b1,         // na pin
+    output reg        busy = 1'b0     // 1 když se vysílá
 );
 
 
@@ -19,14 +19,11 @@ always @(posedge clk) begin
         busy <= 1;
         tx <= 0;
         bit_id <= 0;
-        counter <= 0;
-    end
-
-    if(busy == 1 | start == 1) begin
+        counter <= 1;
+    end else if(busy == 1 ) begin
         counter <= counter +1;
         if (counter[7:0] == 233) begin
             counter <= 0;
-            tx <= data[bit_id];
             if(bit_id <= 7) begin
                 tx <= data[bit_id];
                 bit_id <= bit_id + 1;

@@ -8,7 +8,7 @@ module top (
     // a zobraz spodních 6 bitů na LED
 
     reg [7:0] data;
-    wire valid = 0;
+    wire valid;
     wire busy;
 
     uart_rx rx (clk, uart_rx, data, valid);
