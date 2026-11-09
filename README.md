@@ -9,4 +9,4 @@ Toolchain: Yosys → nextpnr-himbaechel → gowin_pack → openFPGALoader.
 | P1 | Debouncer + čítač stisků | hotovo       |
 | P2 | PWM s parametrem šířky   | hotovo       |
 | P3 | UART                     | hotovo       |
-| P4 |                          | rozpracováno |
+| P4 | regbus                   | rozpracováno |
