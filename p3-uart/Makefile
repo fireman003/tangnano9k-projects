@@ -1,4 +1,4 @@
-PROJ   = pwm
+PROJ   = uart
 DEVICE = GW1NR-LV9QN88PC6/I5
 FAMILY = GW1N-9C
 SRC    = src/top.v src/uart_rx.v src/uart_tx.v

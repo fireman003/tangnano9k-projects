@@ -5,6 +5,10 @@ module top (
     output wire [5:0] led
 );
 
+    wire [7:0] rx_data;
+    wire [7:0] tx_data;
+    wire [7:0] reg0, reg1;
+
     uart_rx rx (
         .clk(clk), .rx(uart_rx),
         .data(rx_data), .valid(rx_valid)
